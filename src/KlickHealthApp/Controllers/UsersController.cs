@@ -91,8 +91,7 @@ namespace KlickHealthApp.Controllers
 
 
 
-        [HttpPost]
-        [Route("api/Users/CreateUser")]
+        [HttpPost("create")]        
         public IActionResult CreateUser(UserDetails userDetails)
         {
             //Check user details is not null
@@ -145,8 +144,8 @@ namespace KlickHealthApp.Controllers
             return Ok("User created successful");
         }
 
-        [HttpPost]
-        [Route("api/Users/UpdateUser")]
+       
+        [HttpPost("update")]
         public IActionResult UpdateUser(UserDetails userDetails)
         {
             if (userDetails == null || userDetails.Id == 0)
@@ -269,8 +268,7 @@ namespace KlickHealthApp.Controllers
             return Ok("User deleted successful");
         }
 
-        [HttpGet]
-        [Route("api/Users/FilterUsers")]
+        [HttpGet("filter")]        
         public IActionResult FilterUsers([FromBody] SearchCriteria searchCriteria)
         {
             if (searchCriteria == null)

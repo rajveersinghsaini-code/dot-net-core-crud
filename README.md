@@ -24,7 +24,7 @@ Example: http://localhost:34781/api/users/status/true
 Method: GET
 
 ### Insert request
-URL: http://localhost:34781/api/Users/CreateUser
+URL: http://localhost:34781/api/Users/create
 
 Method: POST
 
@@ -38,7 +38,7 @@ Method: POST
 }
 ```
 ### Update request
-URL: http://localhost:34781/api/Users/UpdateUser
+URL: http://localhost:34781/api/Users/update
 
 Method: POST
 
@@ -68,7 +68,7 @@ Method: POST
 
 ### Filter User based on different criteria
 
-URL: http://localhost:34781/api/Users/FilterUsers
+URL: http://localhost:34781/api/Users/Filter
 
 Method: GET
 ```json
