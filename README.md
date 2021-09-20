@@ -1,25 +1,20 @@
 # KlickHealthApp
- Simple CRUD operation for Klick Health Assignment
-
-
+ Simple CRUD operation for Klick Health Assignment.
 
 
 ### Get user by user id
 URL: http://localhost:34781/api/Users/{id}
-
 Example: http://localhost:34781/api/Users/1
 
 
 
 ### Get user by Status
 URL: http://localhost:34781/api/users/status/{true or false}
-
 Example: http://localhost:34781/api/users/status/true
 
 
 ### Insert request
 URL: http://localhost:34781/api/Users/CreateUser
-
 Method: POST
 
 ```json
@@ -33,7 +28,6 @@ Method: POST
 ```
 ### Update request
 URL: http://localhost:34781/api/Users/UpdateUser
-
 Method: POST
 
 ```json
@@ -48,22 +42,17 @@ Method: POST
 ```
 ### Deactivate User
 URL: http://localhost:34781/api/Users/deactivate/{integerValue}
-
 Example: http://localhost:34781/api/Users/deactivate/2
 
 Method: POST
 
 ### Deactivate User
 URL: http://localhost:34781/api/Users/delete/{integerValue}
-
 Example: http://localhost:34781/api/Users/delete/2
-
 Method: POST
 
 ### Filter User based on different criteria
-
 URL: http://localhost:34781/api/Users/FilterUsers
-
 Method: GET
 ```json
 {       
@@ -73,3 +62,5 @@ Method: GET
 }
 ```
 Note: Above properties are optional but atleast one is required.
+
+Developer: Rajveer Singh (www.rajveersinghsaini.com)
