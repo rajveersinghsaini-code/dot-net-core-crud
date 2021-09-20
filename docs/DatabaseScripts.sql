@@ -221,6 +221,200 @@ GO
 
 
 
+-----Default data-----
+IF NOT EXISTS(SELECT [Id] FROM [dbo].[UserInformation] WHERE [CreatedBy]='SYSTEM-BULK')
+BEGIN
+	DECLARE @UserId INT = 0	
+
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('User 1','user1@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,1 UNION ALL
+	SELECT @UserId,2
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('User 2','user2@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,1 UNION ALL
+	SELECT @UserId,2 UNION ALL
+	SELECT @UserId,4 UNION ALL	
+	SELECT @UserId,5
+
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Jai Singh','jaisingh@gmail.com','BC',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,4
+
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Vishwas','Vishwas@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,3 UNION ALL
+	SELECT @UserId,5
+
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Rohan','rohan@gmail.com','AB',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,3 
+
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Ruchika','ruchika@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,1 UNION ALL
+	SELECT @UserId,5
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Sejal','sejal@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,4 
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Robin Penton','robin@gmail.com','MB',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,3
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Randy','randy@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,3 UNION ALL
+	SELECT @UserId,5 UNION ALL
+	SELECT @UserId,4
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Abhay','abhay@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,5
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Nitin','nitin@gmail.com','AB',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,3 UNION ALL
+	SELECT @UserId,5
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Cesar','Cesar@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,1 UNION ALL
+	SELECT @UserId,2 UNION ALL
+	SELECT @UserId,5
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Vishal Kumar','vishal@gmail.com','QC',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,1 
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Shubham','shubham@gmail.com','BC',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,3 UNION ALL
+	SELECT @UserId,5
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Atul','atul@gmail.com','NB',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,4 UNION ALL
+	SELECT @UserId,5
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Lalit Chandra','lalit@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,2 UNION ALL
+	SELECT @UserId,5
+	
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Linda','linda@gmail.com','AB',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,3 UNION ALL
+	SELECT @UserId,4
 
 
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Adam','adam@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,1 UNION ALL
+	SELECT @UserId,2
+
+
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Rajiv','rajiv@gmail.com','ON',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,3 UNION ALL
+	SELECT @UserId,5 UNION ALL
+	SELECT @UserId,4
+
+
+	------User---
+	INSERT INTO [dbo].[UserInformation]([Name],[EmailAddress],[ProvinceCode],[IsActive],[CreatedBy],[CreatedOn])
+	VALUES('Sachin','sachin@gmail.com','QC',1,'SYSTEM-BULK',GETDATE())
+	SET @UserId=SCOPE_IDENTITY()
+	---Medications
+	INSERT INTO [dbo].[MedicationDetails]([UserId],[MedicineId])
+	SELECT @UserId,1 UNION ALL	
+	SELECT @UserId,4
+	
+END
+GO
+
+
+
+
+
+	
+	
 
