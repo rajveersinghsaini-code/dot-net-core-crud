@@ -4,18 +4,24 @@
 
 
 
-##Get user by user id
+### Get user by user id
 URL: http://localhost:34781/api/Users/{id}
+
 Example: http://localhost:34781/api/Users/1
 
 
-##Get user by Status
+
+### Get user by Status
 URL: http://localhost:34781/api/users/status/{true or false}
+
 Example: http://localhost:34781/api/users/status/true
 
-##Insert request
+
+### Insert request
 URL: http://localhost:34781/api/Users/CreateUser
+
 Method: POST
+
 ```json
 {  
   "name": "Rajveer Singh",
@@ -25,9 +31,11 @@ Method: POST
   "createdBy": "System"
 }
 ```
-##Update request
+### Update request
 URL: http://localhost:34781/api/Users/UpdateUser
+
 Method: POST
+
 ```json
 {
   "Id":1,
@@ -38,18 +46,24 @@ Method: POST
   "createdBy": "System"
 }
 ```
-##Deactivate User
+### Deactivate User
 URL: http://localhost:34781/api/Users/deactivate/{integerValue}
+
 Example: http://localhost:34781/api/Users/deactivate/2
+
 Method: POST
 
-##Deactivate User
+### Deactivate User
 URL: http://localhost:34781/api/Users/delete/{integerValue}
+
 Example: http://localhost:34781/api/Users/delete/2
+
 Method: POST
 
-##Filter User based on different criteria
+### Filter User based on different criteria
+
 URL: http://localhost:34781/api/Users/FilterUsers
+
 Method: GET
 ```json
 {       
