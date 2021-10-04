@@ -17,7 +17,7 @@
                 "ASPNETCORE_ENVIRONMENT": "Development"
             }
         },
-        "KlickHealthApp": {
+        "DotNetCoreCrud": {
             "commandName": "Project",
             "dotnetRunMessages": "true",
             "launchBrowser": true,

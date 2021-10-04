@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlickHealthApp", "KlickHealthApp\KlickHealthApp.csproj", "{C3188D66-EFF9-4C9A-B370-A89F77EB677D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreCrud", "DotNetCoreCrud\DotNetCoreCrud.csproj", "{6455FEF3-8D50-4B59-9D36-BE3F6936E68B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C3188D66-EFF9-4C9A-B370-A89F77EB677D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3188D66-EFF9-4C9A-B370-A89F77EB677D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3188D66-EFF9-4C9A-B370-A89F77EB677D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3188D66-EFF9-4C9A-B370-A89F77EB677D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6455FEF3-8D50-4B59-9D36-BE3F6936E68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6455FEF3-8D50-4B59-9D36-BE3F6936E68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6455FEF3-8D50-4B59-9D36-BE3F6936E68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6455FEF3-8D50-4B59-9D36-BE3F6936E68B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F93F0181-05B3-465F-96F2-10C085F79353}
+		SolutionGuid = {5CAB9AB5-33FC-4EFC-9A22-1FAA4EBFE3B5}
 	EndGlobalSection
 EndGlobal

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 #nullable enable
-namespace KlickHealthApp.ViewModels
+namespace DotNetCoreCrud.ViewModels
 {
     public class SearchCriteria
     {

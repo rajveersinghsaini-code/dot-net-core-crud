@@ -1,5 +1,5 @@
-# KlickHealthApp
- Simple CRUD operation for Klick Health Assignment
+# Dot net core 
+ Simple CRUD operation
 
 
 ### Home

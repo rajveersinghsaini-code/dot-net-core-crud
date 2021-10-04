@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace KlickHealthApp.ViewModels
+namespace DotNetCoreCrud.ViewModels
 {
     public class UserDetails
     {

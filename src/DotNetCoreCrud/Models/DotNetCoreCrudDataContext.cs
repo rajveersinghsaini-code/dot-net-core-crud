@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace KlickHealthApp.Models
+namespace DotNetCoreCrud.Models
 {
-    public partial class KlickHealthDataContext : DbContext
+    public partial class DotNetCoreCrudDataContext : DbContext
     {
-        public KlickHealthDataContext()
+        public DotNetCoreCrudDataContext()
         {
         }
 
-        public KlickHealthDataContext(DbContextOptions<KlickHealthDataContext> options)
+        public DotNetCoreCrudDataContext(DbContextOptions<DotNetCoreCrudDataContext> options)
             : base(options)
         {
         }

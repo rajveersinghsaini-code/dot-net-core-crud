@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
-namespace KlickHealthApp.Models
+namespace DotNetCoreCrud.Models
 {
     public partial class ProvinceInfo
     {

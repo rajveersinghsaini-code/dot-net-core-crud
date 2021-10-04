@@ -1,19 +1,19 @@
-﻿using KlickHealthApp.Models;
-using KlickHealthApp.ViewModels;
+﻿using DotNetCoreCrud.Models;
+using DotNetCoreCrud.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
 
-namespace KlickHealthApp.Controllers
+namespace DotNetCoreCrud.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
         private readonly ILogger<UsersController> _logger;
-        private readonly KlickHealthDataContext _dbContext;
-        public UsersController(ILogger<UsersController> logger, KlickHealthDataContext dataContext)
+        private readonly DotNetCoreCrudDataContext _dbContext;
+        public UsersController(ILogger<UsersController> logger, DotNetCoreCrudDataContext dataContext)
         {
             _logger = logger;
             _dbContext = dataContext;
@@ -22,7 +22,7 @@ namespace KlickHealthApp.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Welcome to Klick Health User API (service is up and running)");
+            return Ok("Welcome to User API (service is up and running)");
         }
 
         [HttpGet("{id:int}")]

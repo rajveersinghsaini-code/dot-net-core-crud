@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
-namespace KlickHealthApp.Models
+namespace DotNetCoreCrud.Models
 {
     public partial class MedicationDetail
     {

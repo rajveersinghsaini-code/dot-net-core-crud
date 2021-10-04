@@ -1,4 +1,4 @@
-using KlickHealthApp.Models;
+using DotNetCoreCrud.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace KlickHealthApp
+namespace DotNetCoreCrud
 {
     public class Startup
     {
@@ -22,7 +22,7 @@ namespace KlickHealthApp
         {
 
             services.AddControllers();
-            services.AddDbContext<KlickHealthDataContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("klickHealthDatabase")));
+            services.AddDbContext<DotNetCoreCrudDataContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("DatabaseConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
